@@ -52,5 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 //Esta ruta carga un controlador
 $route['default_controller'] = 'index';
+
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['login'] = 'auth/login';
+$route['signin'] = 'auth/signin';

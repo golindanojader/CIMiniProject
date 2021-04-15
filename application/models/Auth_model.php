@@ -13,11 +13,21 @@ public function __construct(){
 }
 
 
-public function getUser($email){
+public function getUser($email = FALSE){
 
-    $this->db->where('user_email',$email);
-    $query = $this->db->get('users');
-    return $query->row();
+
+    if($email){
+
+        $this->db->where('users_email',$email);
+        $query = $this->db->get('users');
+        
+        return $query->row();
+    }else{
+
+        $query = $this->db->get('users');
+        return $query->result();/*Arroja toda la informacion*/
+    }
+   
 }
 
 }

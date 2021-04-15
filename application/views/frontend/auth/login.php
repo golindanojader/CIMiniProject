@@ -1,5 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
+/*$expression = $this->hash->encrypt('123456Aa');
+print_r($expression);*/
+
 ?>
 
 <div class="container mt-1">
@@ -17,6 +21,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 <h1><?= $panel_title; ?></h1>
+
+
 
   <div class="form-group">
     <label for="exampleInputEmail1">Correo Electronico</label>

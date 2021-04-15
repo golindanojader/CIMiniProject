@@ -13,8 +13,6 @@ class index extends CI_Controller{
 
     public function index(){
 		
-
-		
     	$data = new stdClass();
     	$data->title = "Proyecto CI";	
     	$data ->content = "index/index";
