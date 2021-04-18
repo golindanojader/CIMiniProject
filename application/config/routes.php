@@ -59,3 +59,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['login'] = 'auth/login';
 $route['signin'] = 'auth/signin';
+
+$route['signup'] = 'auth/signup';
+
+$route['register'] = 'auth/register';

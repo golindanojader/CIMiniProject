@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a class="nav-link " href="<?=base_url();?>logout" tabindex="-1" aria-disabled="true">Salir</a>
       </li>
           <?php else:?>
-          <li><a class="nav-link" href="#">Registrarse</a></li>
+          <li <?php if(isset($active) && $active == 'signup'){echo "class='active'";}?>><a class="nav-link" href="<?=base_url('signup')?>">Registrarse</a></li>
           <li <?php if(isset($active) && $active == 'login'){echo "class='active'";}?>><a class="nav-link" href="<?= base_url();?>login">Login</a></li>
           <?php endif;?>
         </ul>

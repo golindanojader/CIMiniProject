@@ -75,10 +75,28 @@ class auth extends CI_Controller{
 
     }
 
+    public function signup(){
+
+        $data = new stdClass();
+        $data->title = "Proyecto CI";
+        $data->content = "auth/signup";
+        $data->panel_title = "Registro de usuario";
+        $data->active = 'signup';
+
+        $this->load->view('frontend',$data);
+
+
+    }
+
+    public function register(){
+
+        echo '<pre>';
+        print_r($this->input->post());
+        
+    }
+
 public function logout(){
 
-
-    
     session_destroy();
     redirect();
 }
