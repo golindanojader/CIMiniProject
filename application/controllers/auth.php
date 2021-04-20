@@ -33,8 +33,6 @@ class auth extends CI_Controller{
       /*PARA VALIDAR LOS DATOS DEL CORREO SE CREA UN ARCHIVO FORM_VALIDATION EN LA CARPETA CONFIG*/
       /*valida_login*/
       /*LUEGO SE CREA LA FUNCION CON QUE SE VALIDA LOS DAOS check_password_strength*/
-      
-
         if ($this->form_validation->run('valida_login') == FALSE)
         {
                 $this->login();
